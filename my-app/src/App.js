@@ -210,8 +210,7 @@ function App() {
     </div>
   );
 }
-
-<footer>
+/* <footer>
   <div className="footer-container">
     <div className="footer-left">
       <h3>Logo</h3>
@@ -260,6 +259,6 @@ function App() {
       </form>
     </div>
   </div>
-</footer>
+</footer> */
 
 export default App;
