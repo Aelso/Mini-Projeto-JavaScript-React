@@ -32,8 +32,7 @@ function ShoppingCart({
                 <div className="cart-products">
                     {products.length === 0 && (
                         <span className="empty-text">
-                            Your basket is
-                            currently empty
+                            Seu carrinho está vazinho
                         </span>
                     )}
                     {products.map((product) => (
@@ -64,7 +63,7 @@ function ShoppingCart({
                                 onChange={(
                                     event
                                 ) => {
-                                    onQuantityChange(
+                                    changeQuantity(
                                         product.id,
                                         event
                                             .target
@@ -99,7 +98,7 @@ function ShoppingCart({
                             <button
                                 className="btn remove-btn"
                                 onClick={() =>
-                                    onProductRemove(
+                                    removeProduct(
                                         product
                                     )
                                 }>
@@ -111,7 +110,7 @@ function ShoppingCart({
                     ))}
                     {products.length > 0 && (
                         <button className="btn checkout-btn">
-                            Proceed to checkout
+                            Seguindo para o checkout
                         </button>
                     )}
                 </div>
