@@ -71,28 +71,17 @@ function ShoppingCart({
                                     );
                                 }}>
                                 {[
-                                    ...Array(
-                                        10
-                                    ).keys(),
-                                ].map(
-                                    (number) => {
-                                        const num =
-                                            number +
-                                            1;
+                                    ...Array(10).keys(),
+                                ].map((number) => {
+                                        const num =number + 1;
                                         return (
                                             <option
-                                                value={
-                                                    num
-                                                }
-                                                key={
-                                                    num
-                                                }>
-                                                {
-                                                    num
-                                                }
+                                                value={num}
+                                                key={num }>
+                                                {num}
                                             </option>
-                                        );
-                                    }
+                                            );
+                                        }
                                 )}
                             </select>
                             <button
