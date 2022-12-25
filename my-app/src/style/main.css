@@ -8,9 +8,25 @@
 }
 
 :root {
-	--main-color: #065a82;
+	--main-color: #ebe3e3;
 	--text-color: #232323;
 	--secondary-color: #0797b0;
+}
+
+.header {
+	background-color: #fffafa;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.navbar img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
 }
 
 .App {
@@ -27,8 +43,9 @@
 }
 
 .navbar .logo {
-	color: #fff;
-	text-transform: uppercase;
+	color: rgb(5, 0, 0);
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .btn {
@@ -39,7 +56,7 @@
 }
 
 .shopping-cart-btn {
-	color: #fff;
+	color: rgb(12, 1, 1);
 	display: flex;
 }
 
@@ -84,7 +101,7 @@ main {
 	overflow: hidden;
 }
 
-.product > * {
+.product>* {
 	color: var(--text-color);
 }
 
@@ -161,17 +178,12 @@ main {
 .buttons .btn:active {
 	background-color: var(--secondary-color);
 }
+
 .footer-container {
-	font-weight: 100px;	
+	font-weight: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
-	background-color:  #fffafa;
-}
-
-.social-media{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	background-color: #fffafa;
 }

@@ -6,65 +6,68 @@ import "./style/main.css";
 import { GiShoppingBag } from "react-icons/gi";
 import RatingStars from "./components/RatingStars";
 import ShoppingCart from "./components/ShoppingCart";
-import { AiFillFacebook, AiFillInstagram, AiFillYoutube, AiFillLinkedin, AiFillPhone,AiFillGithub, AiFillMail} from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillYoutube, AiFillLinkedin, AiFillPhone, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { RiAliensFill } from "react-icons/ri";
-import {FaHandSpock} from "react-icons/fa";
-import {CgGames } from "react-icons/cg";
-import {TbMovie} from "react-icons/tb";
+import { FaHandSpock ,FaEarlybirds} from "react-icons/fa";
+import { CgGames } from "react-icons/cg";
+import { TbMovie } from "react-icons/tb";
+import { GiWhiteBook } from "react-icons/gi";
+
+
 
 const products = [
   {
     id: 1,
-    name: "Vivamus vitae",
-    rating: 4.3,
+    name: "Funko Pop Kylo Ren",
+    rating: 4.5,
     description:
-      "Vivamus vitae neque accumsan, ultrices nisl et, viverra magna. Fusce nec maximus sem.",
-    price: 199,
+      "Funko ; POP! STAR WARS · RISE OF SKYWALKER - KYLO REN - SUPREME LEADER #308 ",
+    price: 20,
     image: require("./assets/images/product-1.jpg"),
   },
   {
     id: 2,
-    name: "Fusce sit amet ipsum",
+    name: "Funko Pop Naruto Shippuden Exclusive - Naruto (Sixth Path Sage)",
     rating: 4.2,
     description:
-      "Maecenas fermentum urna egestas urna ullamcorper sodales. Sed a enim imperdiet, tempus massa a, iaculis tellus.",
-    price: 229,
+      "Boneco Funko Pop Anime Naruto Shippuden.",
+    price: 45,
     image: require("./assets/images/product-2.jpg"),
   },
   {
     id: 3,
-    name: "Etiam volutpat aliquam",
-    rating: 3.2,
+    name: "Funko Pop Wonder Woman",
+    rating: 4.8,
     description:
-      "Praesent et orci vel nunc interdum aliquet et non dolor. Etiam eget finibus justo",
-    price: 99,
+      "Boneco Funko Pop Mulher maravilha",
+    price: 59,
     image: require("./assets/images/product-3.jpg"),
   },
   {
     id: 4,
-    name: "Lorem ipsum dolor",
+    name: "Funko Pop Chapolin Colorado",
     rating: 4.8,
     description:
-      "Duis nibh sapien, placerat non nulla ac, suscipit laoreet tortor.",
-    price: 119,
+      "Chapolin Colorado classic Funko Pop",
+    price: 69,
     image: require("./assets/images/product-4.jpg"),
   },
   {
     id: 5,
-    name: "Ultrices nisl",
+    name: "Funko Pop Demon Slayer",
     rating: 4.5,
     description:
-      "Phasellus condimentum, ante et dictum placerat, nulla ipsum commodo lorem, ut mollis nibh turpis a metus.",
-    price: 85,
+      "Funko Pop Nezuko Kamado Demon Slayer",
+    price: 45,
     image: require("./assets/images/product-5.jpg"),
   },
   {
     id: 6,
-    name: "Curabitur in elementum tortor",
+    name: "Funko Pop Dustin stranger things",
     rating: 3.8,
     description:
-      " Mauris convallis diam nibh, non malesuada enim facilisis non. Etiam sapien augue, molestie a porta sed",
-    price: 149,
+      " Funko Pop Dustin stranger things mais legal dele",
+    price: 49,
     image: require("./assets/images/product-6.jpg"),
   },
 ];
@@ -143,7 +146,9 @@ function App() {
         removeProduct={removeProduct}
       />
       <div className="navbar">
-        <h3 className="logo">Logo</h3>
+        <img src={require("./assets/images/banner.jpg")} alt="logo" />
+        <h3 className="logo"> Projeto JavaScript + React |Instituto Nu + Descomplica
+</h3>
         <button
           className="btn shopping-cart-btn"
           onClick={() =>
@@ -160,9 +165,23 @@ function App() {
             )}
         </button>
       </div>
+      <header>
+        <div className="header">
+          <h1 className="Sobre Mim">
+            <FaEarlybirds> </FaEarlybirds> Sobre mim:
+            <GiWhiteBook> </GiWhiteBook> Eterno estudante.
+            <FaHandSpock> </FaHandSpock> Apaixonado por tecnologia e programação.
+            <CgGames> </CgGames> Jogador de games.
+            <TbMovie> </TbMovie> Amante de filmes e séries.
+            <RiAliensFill> </RiAliensFill> Fã de Star Wars.
+          </h1>
+        </div>
+      </header>
+
+
       <main>
         <h2 className="title">
-          Products
+          Produtos
         </h2>
         <div className="products">
           {products.map((product) => (
@@ -196,7 +215,7 @@ function App() {
               </span>
               <div className="buttons">
                 <button className="btn">
-                  Detail
+                  Detalhes
                 </button>
                 <button
                   className="btn"
@@ -205,7 +224,7 @@ function App() {
                       product
                     )
                   }>
-                  Add to cart
+                  Add ao carrinho
                 </button>
               </div>
             </div>
@@ -214,33 +233,56 @@ function App() {
       </main>
 
       <footer>
-         <div className="footer-container">
+        <div className="footer-container">
           <div className="footer-left">
-          <br> <RiAliensFill> </RiAliensFill>Desenvolvido por Aelso Rocha Brito </br>
-          <br><FaHandSpock> </FaHandSpock> Apaixonado por tecnologia e programação.</br>
-          <br><CgGames> </CgGames> Jogador de games.</br>
-          <br> <TbMovie> </TbMovie> Amante de filmes e séries.</br>
-                          
+            <RiAliensFill size={25}> </RiAliensFill> Desenvolvido por Aelso Rocha Brito
+
           </div>
           <div className="footer-center">
-          <p>  para mais informações entre em contato:  </p>
-          <br><AiFillMail> </AiFillMail> aelsus@yahoo.com.br </br>
-          <br><AiFillPhone></AiFillPhone>11-9 9999-9845</br>
+            <p>Para mais informações entre em contato:  </p>
+            <AiFillMail ></AiFillMail> aelsus@yahoo.com.br
+            <AiFillPhone></AiFillPhone>11-9 9999-9845
 
           </div>
 
           <div className="footer-right">
             <div className="social-media">
-              <a href="https://facebook.com"><AiFillFacebook /> </a>
-              <a href="https://www.instagram.com/britoaelso"><AiFillInstagram /> </a>
-              <a href="https://www.linkedin.com/in/aelso-r-brito/"><AiFillLinkedin /> </a>
-              <a href="https://github.com/Aelso"><AiFillGithub/> </a>
-              <a href="https://www.youtube.com/"><AiFillYoutube /> </a>
+              <a href="https://facebook.com"><AiFillFacebook
+                size={30}
+                style={{
+                  color: "black",
+                  backgroundColor: "snow"
+                  
+                  }} /> </a>
+
+              <a href="https://www.instagram.com/britoaelso"><AiFillInstagram
+                size={30}
+                style={{
+                  color: "black"
+                }} /> </a>
+
+              <a href="https://www.linkedin.com/in/aelso-r-brito/"><AiFillLinkedin
+                size={30}
+                style={{
+                  color: "black"
+                }} /> </a>
+
+              <a href="https://github.com/Aelso"><AiFillGithub size={30}
+                style={{
+                  color: "black"
+                }} /> </a>
+
+              <a href="https://www.youtube.com/"><AiFillYoutube
+                size={30}
+                style={{
+                  color: "black"
+                }} /> </a>
+
             </div>
           </div>
 
         </div>
-   
+
       </footer>
 
     </div>
