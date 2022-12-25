@@ -20,7 +20,7 @@ function ShoppingCart({
             }}>
             <div className="shoppingCart">
                 <div className="header">
-                    <h2>Shopping cart</h2>
+                    <h2>Carrinho de compra</h2>
                     <button
                         className="btn close-btn"
                         onClick={onClose}>
@@ -50,9 +50,9 @@ function ShoppingCart({
                                     {product.name}
                                 </h3>
                                 <span className="product-price">
+                                    R$
                                     {product.price *
-                                        product.count}
-                                    $
+                                        product.count}                                    
                                 </span>
                             </div>
                             <select
