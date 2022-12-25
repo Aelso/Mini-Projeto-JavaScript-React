@@ -6,6 +6,8 @@ import "./style/main.css";
 import { GiShoppingBag } from "react-icons/gi";
 import RatingStars from "./components/RatingStars";
 import ShoppingCart from "./components/ShoppingCart";
+import { IconName } from "react-icons/fa";
+
  
 
 const products = [
@@ -211,5 +213,11 @@ function App() {
     </div>
   );
 }
+
+<footer>
+  <div className="footer-content">  
+  <p> © 2022 All rights reserved</p>
+  </div>
+</footer>
 
 export default App;
