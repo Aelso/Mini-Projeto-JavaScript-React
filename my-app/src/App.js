@@ -6,13 +6,8 @@ import "./style/main.css";
 import { GiShoppingBag } from "react-icons/gi";
 import RatingStars from "./components/RatingStars";
 import ShoppingCart from "./components/ShoppingCart";
-import { AiFillFacebook } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillYoutube, AiFillLinkedin, AiFillPhone,AiFillGithub, AiFillMail} from "react-icons/ai";
 import { RiAliensFill } from "react-icons/ri";
-import { AiFillPhone} from "react-icons/ai";
-import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import {FaHandSpock} from "react-icons/fa";
 import {CgGames } from "react-icons/cg";
 import {TbMovie} from "react-icons/tb";
@@ -221,16 +216,16 @@ function App() {
       <footer>
          <div className="footer-container">
           <div className="footer-left">
-           <RiAliensFill> </RiAliensFill>Desenvolvido por Aelso Rocha Brito 
-           <FaHandSpock> </FaHandSpock> Apaixonado por tecnologia e programação.
-           <CgGames> </CgGames> Jogador de games.
-           <TbMovie> </TbMovie> Amante de filmes e séries.
+          <br> <RiAliensFill> </RiAliensFill>Desenvolvido por Aelso Rocha Brito </br>
+          <br><FaHandSpock> </FaHandSpock> Apaixonado por tecnologia e programação.</br>
+          <br><CgGames> </CgGames> Jogador de games.</br>
+          <br> <TbMovie> </TbMovie> Amante de filmes e séries.</br>
                           
           </div>
           <div className="footer-center">
           <p>  para mais informações entre em contato:  </p>
-          <AiFillMail> </AiFillMail> aelsus@yahoo.com.br 
-          <AiFillPhone></AiFillPhone>11-9 9999-9845
+          <br><AiFillMail> </AiFillMail> aelsus@yahoo.com.br </br>
+          <br><AiFillPhone></AiFillPhone>11-9 9999-9845</br>
 
           </div>
 
