@@ -157,3 +157,21 @@ main {
 	background-color: var(--main-color);
 	color: #fff;
 }
+
+.buttons .btn:active {
+	background-color: var(--secondary-color);
+}
+.footer-container {
+	font-weight: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color:  #fffafa;
+}
+
+.social-media{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

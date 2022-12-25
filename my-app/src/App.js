@@ -6,9 +6,16 @@ import "./style/main.css";
 import { GiShoppingBag } from "react-icons/gi";
 import RatingStars from "./components/RatingStars";
 import ShoppingCart from "./components/ShoppingCart";
-import { IconName } from "react-icons/fa";
-
- 
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { RiAliensFill } from "react-icons/ri";
+import { AiFillPhone} from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
+import {FaHandSpock} from "react-icons/fa";
+import {CgGames } from "react-icons/cg";
+import {TbMovie} from "react-icons/tb";
 
 const products = [
   {
@@ -210,14 +217,39 @@ function App() {
           ))}
         </div>
       </main>
+
+      <footer>
+         <div className="footer-container">
+          <div className="footer-left">
+           <RiAliensFill> </RiAliensFill>Desenvolvido por Aelso Rocha Brito 
+           <FaHandSpock> </FaHandSpock> Apaixonado por tecnologia e programação.
+           <CgGames> </CgGames> Jogador de games.
+           <TbMovie> </TbMovie> Amante de filmes e séries.
+                          
+          </div>
+          <div className="footer-center">
+          <p>  para mais informações entre em contato:  </p>
+          <AiFillMail> </AiFillMail> aelsus@yahoo.com.br 
+          <AiFillPhone></AiFillPhone>11-9 9999-9845
+
+          </div>
+
+          <div className="footer-right">
+            <div className="social-media">
+              <a href="https://facebook.com"><AiFillFacebook /> </a>
+              <a href="https://www.instagram.com/britoaelso"><AiFillInstagram /> </a>
+              <a href="https://www.linkedin.com/in/aelso-r-brito/"><AiFillLinkedin /> </a>
+              <a href="https://github.com/Aelso"><AiFillGithub/> </a>
+              <a href="https://www.youtube.com/"><AiFillYoutube /> </a>
+            </div>
+          </div>
+
+        </div>
+   
+      </footer>
+
     </div>
   );
 }
-
-<footer>
-  <div className="footer-content">  
-  <p> © 2022 All rights reserved</p>
-  </div>
-</footer>
 
 export default App;
