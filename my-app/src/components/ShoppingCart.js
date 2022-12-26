@@ -25,8 +25,7 @@ function ShoppingCart({
                         className="btn close-btn"
                         onClick={onClose}>
                         <AiFillCloseCircle
-                            size={30}
-                        />
+                            size={30}                        />
                     </button>
                 </div>
                 <div className="cart-products">
@@ -40,9 +39,7 @@ function ShoppingCart({
                             className="cart-product"
                             key={product.id}>
                             <img
-                                src={
-                                    product.image
-                                }
+                                src={ product.image}
                                 alt={product.name}
                             />
                             <div className="product-info">
@@ -51,8 +48,7 @@ function ShoppingCart({
                                 </h3>
                                 <span className="product-price">
                                     R$
-                                    {product.price *
-                                        product.count}
+                                    {product.price * product.count}
                                 </span>
                             </div>
                             <select
@@ -85,8 +81,7 @@ function ShoppingCart({
                             <button
                                 className="btn remove-btn"
                                 onClick={() =>
-                                    removeProduct(
-                                        product
+                                    removeProduct( product
                                     )
                                 }>
                                 <RiDeleteBin6Line
