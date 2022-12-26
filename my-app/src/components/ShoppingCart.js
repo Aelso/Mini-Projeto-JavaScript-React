@@ -9,6 +9,7 @@ function ShoppingCart({
     removeProduct,
     onClose,
     changeQuantity,
+    totalPrice,
 }) {
     return (
         <div
@@ -25,7 +26,8 @@ function ShoppingCart({
                         className="btn close-btn"
                         onClick={onClose}>
                         <AiFillCloseCircle
-                            size={30}                        />
+                            size={30}
+                        />
                     </button>
                 </div>
                 <div className="cart-products">
@@ -39,18 +41,21 @@ function ShoppingCart({
                             className="cart-product"
                             key={product.id}>
                             <img
-                                src={ product.image}
+                                src={product.image}
                                 alt={product.name}
                             />
                             <div className="product-info">
                                 <h3>
                                     {product.name}
                                 </h3>
+
                                 <span className="product-price">
                                     R$
                                     {product.price * product.count}
                                 </span>
                             </div>
+
+
                             <select
                                 className="count"
                                 value={
@@ -81,7 +86,7 @@ function ShoppingCart({
                             <button
                                 className="btn remove-btn"
                                 onClick={() =>
-                                    removeProduct( product
+                                    removeProduct(product
                                     )
                                 }>
                                 <RiDeleteBin6Line
@@ -90,6 +95,15 @@ function ShoppingCart({
                             </button>
                         </div>
                     ))}
+
+                    <div className="footer">
+                        <span className="total-price">
+                            Total: R$   {totalPrice = products.reduce((total, product) => {
+                                return total + product.price * product.count;
+                            }, 0)}
+                        </span>
+                    </div>
+
                     {products.length > 0 && (
                         <button className="btn checkout-btn">
                             Seguindo para o checkout

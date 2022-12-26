@@ -21,8 +21,8 @@ const products = [
     name: "Funko Pop Kylo Ren",
     rating: 4.5,
     description:
-      "Funko ; POP! STAR WARS · RISE OF SKYWALKER - KYLO REN - SUPREME LEADER #308 ",
-    price: 20,
+      "Funko Pop! Star Wars · Rise Of Skywalker - Kylo Ren - Supreme Leader #308 ",
+    price: 50,
     image: require("./assets/images/product-1.jpg"),
   },
   {
@@ -211,7 +211,7 @@ function App() {
                 }
               </p>
               <span className="product-price">
-                {product.price}$
+              R$ {product.price}
               </span>
               <div className="buttons">
                 <button className="btn">
