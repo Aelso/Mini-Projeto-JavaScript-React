@@ -1,11 +1,17 @@
-#  Projeto em JavaScript + React: Atividade Prática 👣
+## Parceria entre Instituto Nu(NuBank) e Descomplica 🤝
+
+###  Projeto em JavaScript + React: Atividade Prática 👣
 
 🦉 **Atividade Prática – Projeto loja virtual com ReactJS**
 
-* **Título da Prática**: Aplicação do uso do ReactJS para criação de uma loja virtual
-* **Objetivo**: O aluno precisa identificar, codificar os recursos disponíveis do ReactJS e aplicar
-para reproduzir o site especificado.
-
+* **Título da Prática**: Aplicação do uso do ReactJS para criação de uma loja virtual🤔
+* **Objetivo**: O aluno precisa identificar, codificar os recursos disponíveis do ReactJS e aplicar 
+para reproduzir o site especificado.🎯
+* **Materiais, Métodos e Ferramentas**:🧙
+* [Biblioteca front-end - React](https://pt-br.reactjs.org/)
+* [Pacote de icones para projeto React - React Icons](https://react-icons.github.io/react-icons/)
+* [IDE de desenvolvimento de site - Visual Studio Code](https://code.visualstudio.com/) 
+* [Versionamento - GitHub](https://github.com)
 
 👽 **Atividade Prática**
 
